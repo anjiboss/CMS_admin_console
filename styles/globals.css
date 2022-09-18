@@ -1,0 +1,68 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+/* ANCHOR customized */
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+/* ANCHOR Navbar */
+.main-nav {
+  width: 17%;
+  min-height: 100%;
+  background: #333333;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  list-style: none;
+  text-align: left;
+  padding-left: 10px;
+  transition: 0.2s;
+}
+
+.nav a {
+  display: block;
+  min-width: 90px;
+  color: #9db0bf;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.nav:hover {
+  transform: scale(1.1);
+}
